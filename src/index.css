@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@theme {
+  --font-bold: "Arial Black", "Helvetica Neue", sans-serif;
+  
+  --color-bg-dark: #120B38;
+  --color-accent-yellow: #FFD200;
+  --color-accent-blue: #00E5FF;
+  --color-accent-pink: #FF007A;
+  --color-ui-panel: rgba(0, 0, 0, 0.4);
+
+  --background-image-main-gradient: linear-gradient(135deg, #120B38 0%, #2A0E5A 100%);
+}
+
+@layer base {
+  body {
+    @apply font-bold text-white;
+  }
+}
+
+.text-stroke-sm {
+  text-shadow: 2px 2px 0px #000;
+}
+
+.text-stroke-md {
+  text-shadow: 4px 4px 0px #000;
+}
+
+.play-button-shadow {
+  box-shadow: 0 10px 0 #9A7D0A, 0 15px 30px rgba(0,0,0,0.3);
+}
+
+.glass-panel {
+  background: var(--color-ui-panel);
+  backdrop-filter: blur(8px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
